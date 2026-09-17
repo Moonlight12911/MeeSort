@@ -1,13 +1,15 @@
 <div align="center">
   <img src="assets/icon128.png" alt="MeeSort Logo" width="100" height="100" />
+
   <h1>MeeSort</h1>
-  <p><strong>Bringing Back Price Sorting & Smart Filtering to Meesho</strong></p>
-  <p><em>A lightweight, zero-tracking browser extension engineered for value-conscious Meesho shoppers.</em></p>
+
+  <p><strong>Price Sorting & Smart Filtering for Meesho</strong></p>
+  <p><em>Find the right price. Faster.</em></p>
 
   <p>
     <img src="https://img.shields.io/badge/Manifest-V3-blue?style=flat-square" alt="Manifest V3" />
     <img src="https://img.shields.io/badge/Platform-Chrome%20%7C%20Edge%20%7C%20Firefox-orange?style=flat-square" alt="Browser Support" />
-    <img src="https://img.shields.io/badge/Privacy-100%25%20Client--Side-brightgreen?style=flat-square" alt="Client Side Privacy" />
+    <img src="https://img.shields.io/badge/Privacy-Client--Side-brightgreen?style=flat-square" alt="Client Side Privacy" />
     <img src="https://img.shields.io/badge/Telemetry-Zero-red?style=flat-square" alt="Zero Telemetry" />
     <img src="https://img.shields.io/badge/Version-1.0.0-purple?style=flat-square" alt="Version 1.0.0" />
   </p>
@@ -15,33 +17,30 @@
 
 ---
 
-## 🛑 The Problem: Where Did "Sort by Price" Go?
+## 🛍️ The Problem
 
-Meesho is one of India’s most popular e-commerce destinations, beloved by millions of shoppers for its incredible value, wholesale pricing, and budget-friendly products across fashion, home, and daily essentials.
+Finding products by price on Meesho can be difficult when convenient price-ordering options aren't available in the shopping interface.
 
-However, shoppers quickly face a major frustration:
+Without an easy way to organize products by price:
 
-> **Meesho removed the standard "Sort by Price: Low to High" and "Price: High to Low" options from its website.**
+- ❌ Finding lower-priced products can take a lot of scrolling.
+- ❌ Comparing similar products becomes time-consuming.
+- ❌ Useful deals can be buried among many results.
+- ❌ Finding a balance between price, rating, and discount takes extra effort.
 
-Without price sorting:
-- ❌ **No way to find the lowest price**: Shoppers are forced to scroll past hundreds of randomly ordered products just to find budget-friendly options.
-- ❌ **Buried deals**: Bargain finds are scattered across dozens of scroll screens, mixed among higher-priced or sponsored items.
-- ❌ **Wasted time & fatigue**: Comparing prices between similar items requires manual scanning and endless tabs.
-- ❌ **No price-to-rating balance**: It is nearly impossible to quickly identify items that are both affordable **and** highly rated (★ 4.0+).
-
-Value-conscious shopping shouldn't feel like finding a needle in a haystack.
+**MeeSort makes product discovery easier by putting sorting and filtering controls directly into the Meesho shopping experience.**
 
 ---
 
-## 💡 The Solution: MeeSort
+## 💡 The Solution
 
-**MeeSort was built to solve this exact problem.**
+**MeeSort adds convenient price sorting and product filtering to Meesho.**
 
-Designed specifically for Meesho shoppers, MeeSort seamlessly injects an intuitive, non-intrusive toolbar right above Meesho’s search and category product grids. With a single click, your search results are instantly sorted by price, rating, or discount—without leaving the page, without opening external tabs, and without disrupting Meesho's native layout.
+Open a Meesho search or category page and MeeSort activates automatically. Products are collected as you browse, allowing you to sort and filter the products available in your current session.
 
 <div align="center">
   <br />
-  <strong>Search on Meesho &rarr; Click "Price: Low to High" &rarr; Shop the Best Deals Instantly</strong>
+  <strong>Browse → Load More → Sort or Filter → Shop</strong>
   <br /><br />
 </div>
 
@@ -49,106 +48,113 @@ Designed specifically for Meesho shoppers, MeeSort seamlessly injects an intuiti
 
 ## ✨ Features
 
-### 🏷️ 1. Instant Price Sorting
-- **Price: Low &rarr; High**: Instantly bubbles the cheapest products to the very top. Perfect for finding the lowest prices on everyday essentials.
-- **Price: High &rarr; Low**: Flip the order to explore premium, combo, or higher-tier listings first.
+### 🏷️ 1. Price Sorting
 
-### ⭐ 2. Verified Rating Sort & Filters
-- **Sort by Rating**: Prioritize top-rated products with the most positive customer feedback.
-- **Minimum Rating Filters**: Easily filter the catalog by **★ 4.0+**, **★ 3.5+**, or **★ 3.0+** so you never sacrifice product quality for a cheap price.
+Sort products by:
 
-### 💥 3. Deep Discount Discovery
-- **Sort by % Discount**: Discover real clearance deals with the steepest price cuts (e.g. 50%+ off).
+- **Price: Low → High**
+- **Price: High → Low**
 
-### 💰 4. Custom Price Range Filtering
-- Define custom minimum (`₹ Min`) and maximum (`₹ Max`) thresholds or use quick-select budget presets to view only products that fit your wallet.
+Quickly organize collected products based on their displayed price.
 
-### ⚡ 5. Seamless Native Integration
-- **In-Place Transformation**: MeeSort updates only the product grid. Meesho’s top navigation, search bar, and left category filters remain 100% functional and untouched.
-- **Zero Page Reloads**: Works dynamically with single-page application (SPA) searches—type a new query and MeeSort automatically resets and adapts.
+### ⭐ 2. Rating Sorting & Filters
 
-### 🔍 6. "Scan More Products" Feed Expander
-- Meesho loads items dynamically as you scroll. MeeSort includes a safe, throttled **Scan More Products** feature that gathers additional catalog pages into memory so you can sort across a wider catalog of products at once.
+- Sort by **Rating: High → Low**
+- Filter by minimum rating
+- Quickly narrow results based on your preferred rating level.
 
-### 🔒 7. 100% Client-Side Privacy
-- Runs purely inside your own browser.
-- **Zero data collection**: No accounts, no sign-ups, no tracking cookies, and zero external server calls.
+### 💥 3. Discount Sorting & Filtering
+
+- Sort by **Discount: High → Low**
+- Filter products by discount percentage.
+- Find products with larger displayed discounts more easily.
+
+### 💰 4. Price Range Filtering
+
+Set a custom:
+
+- Minimum price
+- Maximum price
+
+Show only products that fit your chosen budget.
+
+### 📦 5. In-Stock Filtering
+
+Filter collected products to show **in-stock products only** when availability information is detected.
+
+### 🔍 6. Load More Products
+
+Meesho loads products dynamically as you scroll.
+
+MeeSort can collect additional products by:
+
+- Scrolling through the page
+- Using the **Find More / Scan More Products** control
+
+Once more products are collected, you can sort or filter the larger set.
+
+### ⚡ 7. Works Directly on Meesho
+
+MeeSort integrates with the existing Meesho shopping page without requiring a separate website or dashboard.
+
+- No page reload required for sorting.
+- Works with dynamic product feeds.
+- Meesho's main shopping interface remains usable.
+- Search and category navigation can be used normally.
+
+### 🔒 8. Privacy First
+
+MeeSort is designed to process product information locally in your browser.
+
+- No account required.
+- No external backend.
+- No analytics.
+- No telemetry.
+- No intentional transmission of product or personal information to external servers.
 
 ---
 
 ## 🌐 Supported Browsers
 
-MeeSort is architected with modern **Manifest V3** standards and supports:
+MeeSort uses modern **Manifest V3** browser-extension standards.
 
 | Browser | Compatibility | Status |
 | :--- | :--- | :--- |
-| **Google Chrome** | Chrome 100+ | Supported |
-| **Microsoft Edge** | Edge 100+ | Supported |
+| **Google Chrome** | Chrome 111+ | Supported |
+| **Microsoft Edge** | Modern Edge | Supported |
 | **Mozilla Firefox** | Firefox 109+ | Supported |
-| **Brave / Opera / Vivaldi** | Chromium-based | Supported |
+
+> Browser compatibility may depend on future browser changes and Meesho's website structure.
 
 ---
 
-## 🚀 How to Install
+## 🚀 How It Works
 
-### Option A: Load Unpacked (Developer Mode)
+### 1. Open Meesho
 
-1. **Download the Release Package** (ZIP) from the [Releases](https://github.com/Moonlight12911/MeeSort/releases) section.
-2. Open your browser's extension manager:
-   - **Chrome / Brave**: Navigate to `chrome://extensions/`
-   - **Edge**: Navigate to `edge://extensions/`
-3. Toggle on **Developer mode** (usually found in the top-right or left sidebar).
-4. Click **Load unpacked** and select the unzipped folder for your browser.
-5. Go to [Meesho.com](https://www.meesho.com/), search for any product, and enjoy price sorting!
+Open any supported Meesho search or category page.
 
----
+MeeSort activates automatically.
 
-## 🛡️ Privacy & Security
+### 2. Load Products
 
-MeeSort takes consumer privacy seriously:
-- **No Analytics / Telemetry**: We do not monitor what you search or what you buy.
-- **No Third-Party Requests**: The extension makes zero background network requests to third-party servers.
-- **No Account Required**: No logins, subscriptions, or credentials.
-- **Local Storage Only**: Only your interface preferences (like your preferred sort order) are saved in local browser storage.
+Products are collected as you browse.
 
-For full details, read our complete [Privacy Policy](PRIVACY.md).
+Keep scrolling or use **Find More / Scan More Products** to collect additional results.
 
----
+### 3. Sort or Filter
 
-## ❓ Frequently Asked Questions (FAQ)
+Choose a sorting or filtering option:
 
-<details>
-<summary><strong>Does MeeSort require my Meesho account credentials?</strong></summary>
-No. MeeSort never asks for, accesses, or requires your Meesho login, passwords, or payment details. It operates strictly as a visual client-side assistant on public search results.
-</details>
+```text
+Price: Low → High
+Price: High → Low
+Rating: High → Low
+Discount: High → Low
+Price Range
+Minimum Rating
+Discount
+In Stock
+```
 
-<details>
-<summary><strong>Will using MeeSort slow down my browser?</strong></summary>
-No. MeeSort is built with lightweight vanilla JavaScript without heavy external libraries or frameworks. It only runs when you are actively on Meesho product catalog pages.
-</details>
-
-<details>
-<summary><strong>Why do some products have multiple prices?</strong></summary>
-Certain products on Meesho have multiple sizes or variations (e.g. ₹199 base, ₹249 for larger sizes). MeeSort sorts products by the primary displayed card price shown in the catalog.
-</details>
-
-<details>
-<summary><strong>Can I sort after searching for a different keyword?</strong></summary>
-Yes! MeeSort listens to search transitions. When you search for a new item, the store clears automatically and populates with the new search results ready to sort.
-</details>
-
----
-
-## ⚠️ Disclaimer
-
-**MeeSort is an independent utility and is not affiliated with, endorsed by, sponsored by, or in any way officially connected with Meesho or Fashnear Technologies Pvt. Ltd.**
-
-"Meesho" as well as related names, marks, emblems, and images are registered trademarks of their respective owners.
-
----
-
-## 📄 License & Copyright
-
-Copyright © 2026 Mukesh. All rights reserved.  
-MeeSort is a proprietary consumer browser utility. Unauthorized reproduction, distribution, or reverse engineering is prohibited.
 
