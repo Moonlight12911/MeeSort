@@ -2,47 +2,87 @@
 
 **Last Updated:** September 2026
 
-At MeeSort, we believe consumer utility extensions should respect user privacy completely. This extension is engineered with a strict **privacy-first, client-only** philosophy.
+MeeSort is designed with a privacy-first, client-only approach. The extension processes Meesho product information locally in your browser and does not require an account or external backend.
 
----
+## 1. Personal Data Collection
 
-## 1. Zero Personal Data Collection
-MeeSort does **not** collect, transmit, sell, or store any personal data. Specifically:
-- We do **not** collect your name, email, phone number, address, or credentials.
-- We do **not** collect payment, banking, or credit card information.
-- We do **not** collect your general browsing history or monitor other websites.
-- We do **not** require an account or registration.
+MeeSort does not collect, transmit, sell, or share personal data.
 
----
+Specifically, MeeSort does not collect:
 
-## 2. What Data Is Accessed & Processed
-MeeSort operates exclusively in your browser context on Meesho pages (`https://www.meesho.com/*`):
-- **Local DOM Access**: MeeSort reads product names, prices, ratings, and image URLs rendered on the current search or category tab in order to sort and display them in your requested order.
-- **In-Memory Store**: Extracted products are kept strictly in temporary browser memory during your active session. They are cleared when you navigate to a new search or close the tab.
+- Your name, email address, phone number, or physical address
+- Passwords or account credentials
+- Payment, banking, or credit card information
+- General browsing history
+- Information from websites other than Meesho
+- Account or registration information
 
----
+## 2. Data Accessed and Processed
+
+MeeSort operates on Meesho pages at `https://www.meesho.com/*`.
+
+The extension may read product information already displayed on the current Meesho page, including:
+
+- Product names
+- Prices
+- Ratings
+- Discount information
+- Product URLs
+- Image URLs
+- Availability information
+
+This information is processed locally in the browser to provide sorting, filtering, and product discovery features.
+
+Extracted product information is kept in temporary browser memory during the active browsing session.
 
 ## 3. Local Browser Storage
-If enabled, MeeSort uses `chrome.storage.local` exclusively to remember your personal interface preferences across sessions:
-- Default sorting preference (e.g. Price: Low → High)
-- Preferred view mode (Sorted Grid vs. Meesho Default)
 
-This information never leaves your device.
+MeeSort may use browser-local storage to save extension preferences, such as sorting and filtering preferences.
 
----
+This information remains on your device and is not transmitted to MeeSort or third parties.
 
-## 4. No External Communication or Analytics
-- MeeSort contains **no tracking beacons**, no Google Analytics, no telemetry, and no third-party SDKs.
-- MeeSort does **not** make network requests to any external server or API.
-- All sorting, filtering, and rendering is performed 100% client-side via JavaScript on your own computer.
+## 4. External Communication and Analytics
 
----
+MeeSort does not operate an external backend or database.
 
-## 5. Permissions Justification
-- `activeTab`: Used to communicate state (e.g. product count) to the extension toolbar popup for the active tab.
-- `storage`: Used to persist user UI preferences locally.
-- `host_permissions` (`https://www.meesho.com/*`): Required to inject the sorting toolbar and read product cards on Meesho.
+The extension does not intentionally transmit product or personal information to external servers.
 
-## 6. Client-Side Security & Integrity
-MeeSort operates exclusively in the local browser environment. The extension transmits zero information over the internet and maintains complete data privacy by design.
+MeeSort does not include:
+
+- Analytics
+- Advertising trackers
+- Telemetry
+- Tracking beacons
+- Third-party tracking SDKs
+
+Sorting, filtering, and product processing are performed locally in the browser.
+
+## 5. Permissions
+
+### `activeTab`
+
+Used to interact with the currently active Meesho tab and provide the extension's functionality.
+
+### `storage`
+
+Used to save extension preferences locally in the browser.
+
+### `https://www.meesho.com/*`
+
+Required for MeeSort to read product information displayed on Meesho pages and provide its sorting and filtering features.
+
+## 6. Third-Party Services
+
+MeeSort does not intentionally transmit user or product information to third-party services.
+
+## 7. Security
+
+MeeSort is designed to process information locally within the user's browser. No personal information is intentionally transmitted by the extension.
+
+## 8. Contact
+
+For privacy questions or concerns, please use the support contact or project repository listed on the extension's store listing.
+
+MeeSort is an independent browser extension and is not affiliated with, endorsed by, sponsored by, or officially connected with Meesho.
+
 
