@@ -1,0 +1,40 @@
+# Proprietary Source Code & Implementation
+src/
+scripts/
+manifests/
+test/
+manifest.json
+package.json
+package-lock.json
+
+# Internal Specifications, Plans & Development Docs
+ARCHITECTURE.md
+CONTRIBUTING.md
+CHANGELOG.md
+KNOWN_LIMITATIONS.md
+STORE_LISTING.md
+LICENSE
+
+# Build Output & Distribution Archives
+build/
+dist/
+*.zip
+
+# Dependencies
+node_modules/
+
+# Debugging, Scratches & Dumps
+scratch/
+*.log
+
+# System & OS Noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
