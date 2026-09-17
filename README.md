@@ -93,7 +93,7 @@ MeeSort is architected with modern **Manifest V3** standards and supports:
 
 ### Option A: Load Unpacked (Developer Mode)
 
-1. **Download the Release Package** (ZIP) from the [Releases](https://github.com/Moonlight12911/MeeSort/releases) section and unzip it.
+1. **Download the Release Package** (ZIP) from the [Releases](https://github.com/Moonlight12911/MeeSort/releases) section.
 2. Open your browser's extension manager:
    - **Chrome / Brave**: Navigate to `chrome://extensions/`
    - **Edge**: Navigate to `edge://extensions/`
